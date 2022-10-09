@@ -1,7 +1,6 @@
 import random
 
-DEBUG = True
-
+DEBUG = False
 gracz_x=random.randint(1,10)
 gracz_y=random.randint(1,10)
 
@@ -9,6 +8,8 @@ skarb_x=random.randint(1,10)
 skarb_y=random.randint(1,10)
 
 ruchy=0
+
+odleglosc_pocz = abs(gracz_x - skarb_x) + abs(gracz_y - skarb_y)
 
 while True:
     odleglosc_przed = abs(gracz_x - skarb_x) + abs(gracz_y - skarb_y)
@@ -35,6 +36,13 @@ while True:
     if  gracz_y > 10 or gracz_x > 10 or gracz_y < 1 or gracz_x < 1:
         print("Wypadłeś za planszę!")
         break
+
+    if ruchy > 2 * odleglosc_pocz:
+        skarb_x = random.randint(1, 10)
+        skarb_y = random.randint(1, 10)
+        ruchy = 0
+        print("Za długo błądzisz, skarb się przeniósł")
+
 
     odleglosc_po = abs(gracz_x - skarb_x) + abs(gracz_y - skarb_y)
 

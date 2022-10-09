@@ -55,3 +55,45 @@ Napisz program, który zapyta o kolejne liczby i zwróci ich średnią
 ### zadanie 2a
 
 Drukuj w pętli co drugą liczbę z zakresu 1-100
+
+
+## Collections
+
+nawiasy kwadratowe pozwalają wybierać elementy z kolekcji.
+
+Elementy określa się na dwa sposoby - index, klucz
+index - pozycja w kolekcji liczona liczbami całkowitymi od 0
+
+## Napisy
+
+niemutowalne
+
+## tuple
+
+niemutowalne
+
+## lista
+
+[]
+
+[1, 2, 3, 4, 5, 6, "a"]
+
+### Zadanie
+
+utwórz tuplę zawierającą 10 elementów
+
+wybierz 2-gi element, przedostatni element, od 3. do 7. włącznie, co 3. element,
+odwróć kolejność tupli
+
+utwórz napis i j.w.
+
+utwórz listę 
+
+- dołącz element do listy
+- wsadź element przed 3. indeksem
+- zmień wartość na indeksie 5
+- zrzuć ostatnią wartość (pop)
+
+
+napisz program wyliczjący średnią wartość z liczb, używając listy. 
+Skorzystaj z funkcji sum, len, podaj max i min

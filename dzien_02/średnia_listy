@@ -1,0 +1,19 @@
+
+
+s=[]
+
+while True:
+
+    x=input("podaj liczb? ca?kowit? lub k by zako?czy?: ")
+
+    if x=="k":
+        break
+
+    x=int(x)
+    s.append(x)
+    print(s)
+
+srednia = sum(s)/len(s)
+
+print("?rednia wynosi: ", {srednia})
+print(f"min={min(s)}, max = {max(s)}")
