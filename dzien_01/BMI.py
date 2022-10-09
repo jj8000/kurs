@@ -1,4 +1,4 @@
-# Program do BMI
+Program do BMI
 
 
 waga=int(input("podaj swoją wagę w kg "))

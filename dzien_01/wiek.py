@@ -1,10 +1,8 @@
+rok = int(input("Podaj rok urodzenia: "))
 
-rok=int(input("Podaj rok urodzenia: "))
+wiek = 2022 - rok
 
-wiek=2022-rok
-
-if wiek>=18: 
+if wiek >= 18:
     print("obywatel pełnoletni!")
 else:
     print("obywatel niepełnoletni!")
-    
