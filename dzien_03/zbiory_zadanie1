@@ -1,0 +1,18 @@
+
+liczby_uzytkownika = set()
+parzyste0_100 = set(range(0, 101, 2))
+
+
+print(parzyste0_100)
+
+while True:
+    liczba = input("Podaj liczbę całkowitą (Enter by zakończyć): ")
+    if liczba:
+        liczby_uzytkownika.add(liczba)
+    elif liczba == "":
+        break
+    else:
+        print("nieprawidłowe dane")
+
+print(f"Ilość unikalnych liczb:  {len(liczby_uzytkownika)}")
+print(f"Ilość parzystych liczb w zakresie 0-100:  {len(liczby_uzytkownika.intersection(parzyste0_100))}")
